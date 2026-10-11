@@ -26,10 +26,10 @@ void draw()
 {
   background(0);
   drawColors( clothSize * 0, reds );
-  drawColors( clothSize * 1, yellows );
-  drawColors( clothSize * 2, greens );
-  drawColors( clothSize * 3, blues );
-  drawColors( clothSize * 4, purples );
+  drawColors( clothSize * 1.2, yellows );
+  drawColors( clothSize * 2.4, greens );
+  drawColors( clothSize * 3.6, blues );
+  drawColors( clothSize * 4.8, purples );
   
   showRGB();
 }
@@ -50,6 +50,7 @@ void keyPressed()
     generateColor();
 }
 
+//Currently off
 void showRGB()
 {
   int col = mouseX/clothSize;
@@ -212,7 +213,7 @@ void generateColor()
   }
 }
 
-void drawColors( int y, ArrayList<Integer> colors )
+void drawColors( float y, ArrayList<Integer> colors )
 {
   for( int i = 0; i < width/clothSize; i++ )
   {
