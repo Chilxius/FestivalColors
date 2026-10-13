@@ -235,7 +235,7 @@ void generateColor()
         {
           r++;
           g++;
-          if( random(3) < 1 ) b++;
+          b--;
         }
       else
         while( g > 0 && b > 0 )
